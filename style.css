@@ -1,0 +1,139 @@
+* {
+	box-sizing: border-box;
+  }
+  body{
+	  background:#EFEFEF;
+	  font-family:sans-serif;
+  }
+  .main-container{
+	  width:100%;
+	  display:grid;
+	  grid-template-rows:60px auto 60px;
+	  grid-template-areas:"hd hd" "main btn" "ft ft";
+  }
+  .header{
+	  grid-area:hd;
+  }
+  .leftdiv{
+	  grid-area:main;
+	  display:grid;
+	  grid-template-columns: 1fr 1fr 1fr;
+  }
+  .rightdiv{
+	  grid-area:btn;
+	  width: 50%;
+	  display: flex;
+	  flex-direction: column;	
+  }
+  .footer{
+	  grid-area:ft;
+  }
+  .header, 
+  .footer{
+	  font-weight:bold;
+	  text-align: center;
+	  line-height: 30px;
+  }
+  
+  .box {
+	padding: 10px;
+	font-size:100px;
+	color:#fff;
+	text-align:center;
+  }
+  .class-1 {
+	background: #6F98A8;
+	border:10px solid #6F98A8;
+  }
+  .class-2 {
+	background: #2B8EAD;
+	border:10px solid #2B8EAD;
+  }
+  .class-3 {
+	background: #2F454E;
+	border:10px solid #2F454E;
+  }
+  .class-4 {
+	background: #2B8EAD;
+	border:10px solid #2B8EAD;
+  }
+  .class-5 {
+	background: #2F454E;
+	border:10px solid #2F454E;
+  }
+  .class-6 {
+	background: #BFBFBF;
+	border:10px solid #BFBFBF;
+  }
+  .class-7 {
+	background: #BFBFBF;
+	border:10px solid #BFBFBF;
+  }
+  .class-8 {
+	background: #6F98A8;
+	border:10px solid #6F98A8;
+  }
+  .class-9 {
+	background: #2F454E;
+	border:10px solid #2F454E;
+  }
+  
+  .btn {
+	border-radius:10px;
+	padding: 12px 16px;
+	color:#fff;
+	background-color: #72C3DC;
+	width:60%;
+	margin:20px;
+	cursor: pointer;
+	display:block;
+	border: none;
+	box-shadow: 1px 4px 0px 0px #2B8EAD;
+    -webkit-box-shadow: 0px 4px 0px 0px #2B8EAD;
+    -moz-box-shadow: 0px 4px 0px 0px #2B8EAD;
+	
+  }
+  
+  .btn:hover {
+	background-color: #2F454E;
+  }
+  
+  @media (max-width: 600px) { /*(adjusted queries to test in chrome with 600px) ideally can be changed for Mobile widths*/
+	  body{
+		  background:#FFF;
+	  }
+	  .main-container{
+		  border: 10px solid;
+		  grid-template-rows:60px auto auto 60px;
+		  grid-template-areas:"hd" "btn" "main" "ft";
+	  }
+	  .box{
+		  width:100%;
+		  background:#EFEFEF !important;
+		  font-size: 26px;
+		  margin-bottom: 2px;
+		  color: #000;
+	  }
+	  .leftdiv{
+		  grid-template-columns: 1fr;
+	  }
+	  .rightdiv{
+		  display: flex;
+		  width: 80%;
+		  flex-direction: row;
+	  }
+	  .leftdiv, .rightdiv{
+		  padding: 0px 30px;
+	  }
+	  .header{
+		  padding:15px;
+		  background:darkslategrey;
+		  color:#fff;
+	  }
+	  .leftdiv div{
+		  border-top:none !important;
+		  border-right:none !important;
+		  border-bottom:none !important;
+	  }
+  }
+  
