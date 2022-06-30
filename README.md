@@ -17,8 +17,8 @@ This is to **demonstrate Responsive cards with Shuffle and sort feature for mobi
 
 Either clone this repository or fork it on GitHub and clone your fork:
 ```
-git clone https://github.com/urveerendra/SortShuffle.git
-cd SortShuffle
+git clone https://github.com/urveerendra/maerskSortShuffle.git
+cd maerskSortShuffle
 
 ```
 ### To run 
